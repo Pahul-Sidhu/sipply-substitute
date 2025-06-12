@@ -1,0 +1,117 @@
+/* General page styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+}
+
+/* Main container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: transform 0.4s ease;
+}
+
+/* Move form up when submitted */
+.home-container.submitted {
+  transform: translateY(-30px); /* Upward slide */
+}
+
+/* Headings */
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.home-subtitle {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Form styling */
+.home-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Inputs */
+.home-input {
+  width: 320px;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: rgb(46, 49, 52);
+}
+
+.home-input:focus {
+  border-color: #673fd6;
+  outline: none;
+}
+
+/* Submit Button */
+.home-button {
+  background-color: #673fd6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-1px);
+}
+
+/* Footer */
+.home-footer {
+  margin-top: 2rem;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.response-message{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8a6ddc;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.response-justification{
+    display: flex;
+}
+
+.icon{
+    padding: 1rem;;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
